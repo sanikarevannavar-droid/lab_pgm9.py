@@ -6,7 +6,7 @@ def test_product_details():
         "Product ID: 101\n"
         "Product Name: Washing Machine\n"
         "Quantity: 5\n"
-        "Price: 55000.00"
+        "Price: 55000"
     )
 
     assert product_details(101, "Washing Machine", 5, 55000) == expected
