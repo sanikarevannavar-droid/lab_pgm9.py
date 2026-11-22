@@ -1,13 +1,19 @@
-def product_details(product_id, name, quantity, price):
+import sys
+
+def product_details(pid, name, quantity, price):
     return (
-        f"Product ID: {product_id}\n"
+        f"Product ID: {pid}\n"
         f"Product Name: {name}\n"
         f"Quantity: {quantity}\n"
-        f"Price: {price:.2f}"
+        f"Price: {price}"
     )
 
-
-# Main program
 if __name__ == "__main__":
-    result = product_details(101, "Washing Machine", 5, 55000)
-    print(result)
+    pid = sys.argv[1]
+    name = sys.argv[2]
+    quantity = sys.argv[3]
+    price = sys.argv[4]
+
+    print("\nProduct Details")
+    print("--------------------")
+    print(product_details(pid, name, quantity, price))
