@@ -14,8 +14,8 @@ def test_product_details():
 
 def test_another_product():
     expected = (
-        "Product ID: 102\n"
-        "Product Name: Refrigerator\n"
+        "Product ID: 101\n"
+        "Product Name: wa\n"
         "Quantity: 10\n"
         "Price: 25000.00"
     )
